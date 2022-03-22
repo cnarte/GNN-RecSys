@@ -30,14 +30,14 @@ num_workers = 4 if cuda else 0
 class TrainDataPaths:
     def __init__(self):
         self.result_filepath = 'TXT FILE WHERE TO LOG THE RESULTS .txt'
-        self.sport_feat_path = 'FEATURE DATASET, SPORTS (sport names) .csv'
-        self.full_interaction_path = 'INTERACTION LIST, USER-ITEM (Full dataset, not splitted between train & test).csv'
-        self.item_sport_path = 'INTERACTION LIST, ITEM-SPORT .csv'
-        self.user_sport_path = 'INTERACTION LIST, USER-SPORT .csv'
-        self.sport_sportg_path = 'INTERACTION LIST, SPORT-SPORT .csv'
-        self.item_feat_path = 'FEATURE DATASET, ITEMS .csv'
-        self.user_feat_path = 'FEATURE DATASET, USERS.csv'
-        self.sport_onehot_path = 'FEATURE DATASET, SPORTS (one-hot vectors) .csv'
+        # self.sport_feat_path = 'FEATURE DATASET, SPORTS (sport names) .csv'
+        self.full_interaction_path = '/content/drive/MyDrive/sony/dataset/relationship.csv'
+        # self.item_sport_path = 'INTERACTION LIST, ITEM-SPORT .csv'
+        # self.user_sport_path = 'INTERACTION LIST, USER-SPORT .csv'
+        # self.sport_sportg_path = 'INTERACTION LIST, SPORT-SPORT .csv'
+        self.item_feat_path = '/content/drive/MyDrive/sony/dataset/content.csv'
+        self.user_feat_path = '/content/drive/MyDrive/sony/dataset/user.csv'
+        # self.sport_onehot_path = 'FEATURE DATASET, SPORTS (one-hot vectors) .csv'
 
 
 def train_full_model(fixed_params_path,
